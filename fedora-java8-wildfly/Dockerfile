@@ -11,13 +11,13 @@ RUN yum install unzip -y
 ADD jdk-8u5-linux-x64.rpm /
 
 #ADD wildfly-8.0.0.Final.zip /
-RUN wget http://download.jboss.org/wildfly/8.1.0.CR1/wildfly-8.1.0.CR1.zip
+RUN wget http://download.jboss.org/wildfly/8.1.0.CR2/wildfly-8.1.0.CR2.zip
 
 # We need to download java to the same folder as this Dockerfile
 RUN rpm -ivh jdk-8u5-linux-x64.rpm
 
-RUN unzip wildfly-8.1.0.CR1.zip
-RUN rm wildfly-8.1.0.CR1.zip
+RUN unzip wildfly-8.1.0.CR2.zip
+RUN rm wildfly-8.1.0.CR2.zip
 RUN ln -s wildfly-8.* wildfly
 
 # Add user

@@ -9,3 +9,5 @@ RUN yum install wget -y
 RUN wget https://raw.githubusercontent.com/jarryDk/MineCraft/master/install-and-run-forge-minecraft/install-and-run-forge-minecraft.sh
 
 RUN sh install-and-run-forge-minecraft.sh
+
+EXPOSE 25565

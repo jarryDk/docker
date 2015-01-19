@@ -5,7 +5,7 @@ This Dockerfile install
 - java-1.8.0-openjdk
 - wget
 
-Inside docker we fetch [install-and-run-forge-minecraft.sh] (https://raw.githubusercontent.com/jarryDk/MineCraft/master/install-and-run-forge-minecraft/install-and-run-forge-minecraft.sh) fra github.com and run the file.
+Inside docker we fetch [install-and-run-forge-minecraft.sh] (https://raw.githubusercontent.com/jarryDk/MineCraft/master/install-and-run-forge-minecraft/install-and-run-forge-minecraft.sh) from github.com and run the file.
 
 ##install-and-run-forge-minecraft.sh
 

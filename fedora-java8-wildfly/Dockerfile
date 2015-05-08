@@ -23,8 +23,8 @@ RUN ln -s wildfly-8.* wildfly
 RUN /wildfly/bin/add-user.sh admin passw0rd_ --silent
 
 # Add files
-ADD launch.sh /
-RUN chmod +x /launch.sh
+## ADD launch.sh /
+## RUN chmod +x /launch.sh
 
 # and launch
 ENTRYPOINT /wildfly/bin/standalone.sh

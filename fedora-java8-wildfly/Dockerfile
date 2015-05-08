@@ -1,23 +1,22 @@
-# Inspiration
-# https://github.com/hpehl/dockerfiles
-
-FROM fedora:20
+FROM fedora:21
 
 MAINTAINER Michael Bornholdt Nielsen mni@jarry.dk
 
+RUN yum -y update && yum clean all
+
 RUN yum install wget -y
+RUN yum install curl -y
 RUN yum install unzip -y
 
-ADD jdk-8u5-linux-x64.rpm /
+curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "https://edelivery.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-i586.rpm"
 
-#ADD wildfly-8.0.0.Final.zip /
-RUN wget http://download.jboss.org/wildfly/8.1.0.CR2/wildfly-8.1.0.CR2.zip
+RUN wget http://download.jboss.org/wildfly/8.2.0.Final/wildfly-8.2.0.Final.zip
 
 # We need to download java to the same folder as this Dockerfile
-RUN rpm -ivh jdk-8u5-linux-x64.rpm
+RUN rpm -ivh jdk-8u45-linux-i586.rpm
 
-RUN unzip wildfly-8.1.0.CR2.zip
-RUN rm wildfly-8.1.0.CR2.zip
+RUN unzip wildfly-8.2.0.Final.zip
+RUN rm wildfly-8.2.0.Final.zip
 RUN ln -s wildfly-8.* wildfly
 
 # Add user

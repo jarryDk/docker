@@ -8,7 +8,7 @@ RUN yum install wget -y
 RUN yum install curl -y
 RUN yum install unzip -y
 
-curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "https://edelivery.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-i586.rpm"
+RUN curl -L -O -H "Cookie: oraclelicense=accept-securebackup-cookie" -k "https://edelivery.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-i586.rpm"
 
 RUN wget http://download.jboss.org/wildfly/8.2.0.Final/wildfly-8.2.0.Final.zip
 

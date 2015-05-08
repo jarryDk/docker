@@ -14,11 +14,11 @@
 
 ##RUN Interactive
 
-[root@jarry fedora21-mongo-3.0.2]# docker run -i --privileged=true -p 27017:27017 -v /data/db:/data/db mni/mongodb
+[root@jarry fedora21-mongo-3.0.2]# docker run -i --privileged=true -p 27017:27017 -v /data/db:/data/db jarry/fedora-mongodb
 
 ## Restart on boot
 
-[root@jarry fedora21-mongo-3.0.2]# docker run -d --privileged=true --restart=always -p 27017:27017 -v /data/db:/data/db mni/mongodb
+[root@jarry fedora21-mongo-3.0.2]# docker run -d --privileged=true --restart=always -p 27017:27017 -v /data/db:/data/db jarry/fedora-mongodb
 
 
 ## Links

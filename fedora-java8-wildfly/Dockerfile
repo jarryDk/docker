@@ -27,5 +27,5 @@ ADD launch.sh /
 RUN chmod +x /launch.sh
 
 # and launch
-ENTRYPOINT /launch.sh
+ENTRYPOINT /wildfly/bin/standalone.sh
 EXPOSE 8080 9990

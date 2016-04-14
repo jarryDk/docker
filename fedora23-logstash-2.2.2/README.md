@@ -1,4 +1,4 @@
-#Docker - Logstash 3.3.3 on Feodra 23 
+#Docker - Logstash 2.2.2 on Feodra 23 
 
 
 

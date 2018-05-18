@@ -8,5 +8,5 @@ RUN yum update -y \
   && yum clean all \
   && rm openjdk-9_linux-x64_bin.tar.gz \
   && rm -rf /var/cache/yum
-ENV JAVA_HOME /usr/lib/jvm/jdk-10
+ENV JAVA_HOME /usr/lib/jvm/jdk-9
 ENV PATH "$PATH":/${JAVA_HOME}/bin:.:

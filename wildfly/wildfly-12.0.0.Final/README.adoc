@@ -1,0 +1,22 @@
+# Jave EE 8 support
+
+
+By default WildFly 12 launches in EE7 mode. In order to use these new capabilities you have to enable EE8 preview mode. This can be accomplished by passing the ee8.preview.mode property during startup:
+
+----
+./standalone.sh -Dee8.preview.mode=true
+----
+
+Alternatively, this can be achieved by launching the server using the new standalone-ee8.xml configuration, which simply includes the property in the config.
+
+----
+./standalone.sh -c standalone-ee8.xml
+----
+
+Just after /server/extensions this is added to the xml
+[source,xml]
+----
+<system-properties>
+    <property name="ee8.preview.mode" value="true"/>
+</system-properties>
+----

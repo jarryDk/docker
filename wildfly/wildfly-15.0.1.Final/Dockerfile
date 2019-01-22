@@ -1,7 +1,7 @@
 FROM jarrydk/java:11
 MAINTAINER Michael Bornholdt Nielsen, jarry.dk
 
-ENV VERSION 14.0.1.Final
+ENV VERSION 15.0.1.Final
 ENV INSTALL_DIR /opt
 ENV WILDFLY_HOME ${INSTALL_DIR}/wildfly-${VERSION}
 ENV DEPLOYMENT_DIR ${WILDFLY_HOME}/standalone/deployments/

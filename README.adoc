@@ -15,3 +15,12 @@ sudo docker exec -t -i kinabogen /bin/bash`
 == Inspiration
 
 https://github.com/AdamBien/docklands[docklands] - Apache License 2.
+
+== Security
+
+sudo chmod 666 /var/run/docker.sock
+sudo usermod -a -G docker $USER
+
+https://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/[Solving Docker permission denied while trying to connect to the Docker daemon socket]
+
+https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue#51362528[How to fix docker: Got permission denied issue]

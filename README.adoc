@@ -1,18 +1,52 @@
-= Dockerfile
+= Docker
 
-To run a container usingen the image named "jarrydk/wildfly:12.0.0.Final"
+== Java
 
-[source,bash
+Versions
+
+- 8
+- 9
+- 10
+- 11
+
+link:java/README.adoc[java/README.adoc]
+
+== Wildfly
+
+Versions
+
+- 12.0.0.Final
+- 13.0.0.Final
+- 14.0.1.Final
+- 15.0.1.Final
+
+link:wildfly/README.adoc[wildfly/README.adoc]
+
+To run a container usingen the image named `jarrydk/wildfly:15.0.1.Final`
+
+[source,bash]
 ----
-sudo docker run -d -p 8080:8080 -p 8443:8443 --name kinabogen jarrydk/wildfly:12.0.0.Final
+docker run -d \
+  -p 8080:8080 -p 8443:8443 \
+  --name kinabogen jarrydk/wildfly:15.0.1.Final
 ----
 
 To connect to the running container "kinabogen"
 
-[source,bash
+[source,bash]
 ----
-sudo docker exec -t -i kinabogen /bin/bash`
+docker exec -t -i kinabogen /bin/bash
 ----
+
+== ActiveMQ
+
+Versions
+
+- 5.15.8
+
+link:activemq/README.adoc[activemq/README.adoc]
+
+
 
 == Inspiration
 

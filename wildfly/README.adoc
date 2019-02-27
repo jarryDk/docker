@@ -1,11 +1,13 @@
 = wildfly
 
+http://www.wildfly.org/[WildFly Homepage · WildFly]
+
+Base is `jarrydk/java:11` link:../java/README.adoc[java/README.adoc]
+
 Wildfly
 
-- 12.0.0.Final
-- 13.0.0.Final
-- 14.0.1.Final
-- 15.0.1.Final
+- jarrydk/wildfly:14.0.1.Final
+- jarrydk/wildfly:15.0.1.Final
 
 == Port Map
 

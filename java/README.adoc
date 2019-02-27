@@ -1,8 +1,8 @@
 = java
 
-OpenJdk
+https://jdk.java.net[jdk.java.net]
 
-- 8
-- 9
-- 10
-- 11
+- jarrydk/java:8
+- jarrydk/java:11
+- jarrydk/java:12
+- jarrydk/java:13

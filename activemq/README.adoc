@@ -1,6 +1,6 @@
 = activemq
 
-ActiveMQ
+http://activemq.apache.org/[Apache ActiveMQ &#8482; -- Index]
 
 == Port Map
 
@@ -38,6 +38,6 @@ docker exec -t -i my_activemq /bin/bash
 
 ActiveMQ expects that some configuration files already exists, so make a copy from the folder `conf` to `/your/persistent/dir/conf` if you use `-v /your/persistent/dir/conf:/opt/activemq/conf`.
 
-== Credite
+== Inspiration
 
 https://github.com/rmohr/docker-activemq

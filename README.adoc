@@ -2,51 +2,29 @@
 
 == Java
 
-Versions
+Base is `centos:7`
 
-- 8
-- 9
-- 10
-- 11
+- jarrydk/java:8
+- jarrydk/java:11
 
 link:java/README.adoc[java/README.adoc]
 
 == Wildfly
 
-Versions
+Base is `jarrydk/java:11`
 
-- 12.0.0.Final
-- 13.0.0.Final
-- 14.0.1.Final
-- 15.0.1.Final
+- jarrydk/wildfly:14.0.1.Final
+- jarrydk/wildfly:15.0.1.Final
 
 link:wildfly/README.adoc[wildfly/README.adoc]
 
-To run a container usingen the image named `jarrydk/wildfly:15.0.1.Final`
-
-[source,bash]
-----
-docker run -d \
-  -p 8080:8080 -p 8443:8443 \
-  --name kinabogen jarrydk/wildfly:15.0.1.Final
-----
-
-To connect to the running container "kinabogen"
-
-[source,bash]
-----
-docker exec -t -i kinabogen /bin/bash
-----
-
 == ActiveMQ
 
-Versions
+Base is `jarrydk/java:11`
 
-- 5.15.8
+- jarrydk/activevmq:5.15.8
 
 link:activemq/README.adoc[activemq/README.adoc]
-
-
 
 == Inspiration
 
